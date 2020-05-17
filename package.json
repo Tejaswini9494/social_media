@@ -19,9 +19,9 @@
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
-    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js npm install nodemon",
-    "start": "npm run development && NODE_ENV=production node ./dist/server.generated.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm run build"
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "npm run development && NODE_ENV=test node ./dist/server.generated.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js"
   },
   "engines": {
     "node": "13.12.0",
