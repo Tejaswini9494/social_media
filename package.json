@@ -21,7 +21,7 @@
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
     "start": "npm run development && NODE_ENV=test node ./dist/server.generated.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js"
+    "heroku-postbuild":"NODE_ENV=test && NPM_CONFIG_PRODUCTION=false && webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js"
   },
   "engines": {
     "node": "13.12.0",
