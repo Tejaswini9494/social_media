@@ -18,12 +18,12 @@ const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 600,
     margin: 'auto',
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(0),
     marginBottom: theme.spacing(5)
   },
   title: {
-    padding:`${theme.spacing(3)}px ${theme.spacing(2.5)}px ${theme.spacing(2)}px`,
-    color: theme.palette.text.secondary
+    padding:`${theme.spacing(1)}px ${theme.spacing(2.5)}px ${theme.spacing(2)}px`,
+    color: theme.palette.info.main
   },
   media: {
     minHeight: 400
@@ -31,10 +31,10 @@ const useStyles = makeStyles(theme => ({
   credit: {
     padding: 10,
     textAlign: 'right',
-    backgroundColor: '#ededed',
+    backgroundColor: '#000',
     borderBottom: '1px solid #d0d0d0',
     '& a':{
-      color: '#3f4771'
+      color: '#000'
     } 
   }
 }))
@@ -59,14 +59,14 @@ export default function Home({history}){
           <Grid container spacing={8}>
             <Grid item xs={12}>
               <Card className={classes.card}>
-                <Typography variant="h6" className={classes.title}>
-                  Home Page
+                <Typography variant="h6" className={classes.title}><center>
+                  WELCOME!!!</center>
                 </Typography>
                 <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
     
                 <CardContent>
-                  <Typography type="body1" component="p">
-                    WELCOME!!! 
+                  <Typography type="body1" component="p"><center>
+                     </center>
                   </Typography>
                 </CardContent>
               </Card>
