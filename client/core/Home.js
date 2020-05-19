@@ -54,7 +54,9 @@ export default function Home({history}){
   }, [])
 
     return (
-      <div className={classes.root}>
+      <div style={{
+        backgroundColor: 'palette.background.paper'
+      }} className={classes.root}>
         { !defaultPage &&
           <Grid container spacing={8}>
             <Grid item xs={12}>
